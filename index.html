@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Triagem de Pronto Socorro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <img src="imgs/cruz-vermelha.png">
+        <p><b>Hospital Front</b></p>
+        <h2>Formulário de Triagem de Pronto Socorro</h2>
+        <img class="barra" src="imgs/barra.png">
+        <form>
+            <br>
+            <h4>Dados Pessoais</h4>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="dataNascimento">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="Telefone">
+                </div>
+            </div>
+            <h4>Dados de Saúde</h4>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="altura">Altura</label>
+                    <input type="text" class="form-control" id="peso" placeholder="Altura">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="peso">Peso</label>
+                    <input type="text" class="form-control" id="peso" placeholder="Peso">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="temperatura">Temperatura</label>
+                    <input type="text" class="form-control" id="temperatura" placeholder="Temperatura">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="alergias">Alergias</label>
+                    <input type="text" class="form-control" id="alergias" placeholder="Alergias">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comorbidades">Comorbidades</label>
+                <textarea class="form-control" id="comorbidades" rows="3"
+                    placeholder="Descreva as comorbidades"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="sintomas">Sintomas</label>
+                <textarea class="form-control" id="sintomas" rows="3" placeholder="Descreva os sintomas"></textarea>
+            </div>
+            <h4>Classificação</h4>
+            <div class="form-group">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="classificacao" id="classificacaoAzul"
+                        value="azul">
+                    <label class="form-check-label" for="classificacaoAzul">Azul</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="classificacao" id="classificacaoVerde"
+                        value="verde">
+                    <label class="form-check-label" for="classificacaoVerde">Verde</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="classificacao" id="classificacaoAmarelo"
+                        value="amarelo">
+                    <label class="form-check-label" for="classificacaoAmarelo">Amarelo</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="classificacao" id="classificacaoLaranja"
+                        value="laranja">
+                    <label class="form-check-label" for="classificacaoLaranja">Laranja</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="classificacao" id="classificacaoVermelho"
+                        value="vermelho">
+                    <label class="form-check-label" for="classificacaoVermelho">Vermelho</label>
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
